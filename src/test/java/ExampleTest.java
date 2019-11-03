@@ -1,8 +1,9 @@
-import io.qameta.allure.Epic;
+import  io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 import org.testng.annotations.Test;
+
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
@@ -20,9 +21,7 @@ public class ExampleTest {
     }
 
     @Test
-    @Epic(value = "Математика")
-    @Feature(value = "Простые математические операции")
-    @Story(value = "Вычитание")
+    @Story("Тест номер два‚ 2")
     public void testTwo() {
         step1();
         assertThat(false)
