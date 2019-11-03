@@ -20,7 +20,9 @@ public class ExampleTest {
     }
 
     @Test
-    @Story("Тест номер 2‚ 2")
+    @Epic(value = "Математика")
+    @Feature(value = "Простые математические операции")
+    @Story(value = "Вычитание")
     public void testTwo() {
         step1();
         assertThat(false)
