@@ -7,12 +7,12 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 
-@Epic("Epic")
-@Feature("Feature")
+@Epic("Примеры тестов")
+@Feature("Тестовый набор")
 public class ExampleTest {
 
     @Test
-    @Story("РўРµСЃС‚ 1")
+    @Story("Тест номер один‚ 1")
     public void testOne() {
         assertThat(true)
                 .as("AssertTrue")
@@ -20,7 +20,7 @@ public class ExampleTest {
     }
 
     @Test
-    @Story("РўРµСЃС‚ 2")
+    @Story("Тест номер 2‚ 2")
     public void testTwo() {
         step1();
         assertThat(false)
@@ -28,17 +28,17 @@ public class ExampleTest {
                 .isFalse();
     }
 
-    @Step("РЁР°Рі 1")
+    @Step("Шаг промежуточный 1")
     void step1() {
         step2();
     }
 
-    @Step("РЁР°Рі 2")
+    @Step("Шаг промежуточный 2")
     void step2() {
         step3();
     }
 
-    @Step("РЁР°Рі 3")
+    @Step("Шаг промежуточный 3")
     void step3() {
 
     }
